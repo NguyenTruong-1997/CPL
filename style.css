@@ -1,0 +1,18 @@
+.card-item {
+  display: flex;
+}
+
+.card-img img {
+  width: 100px;
+  height: 100px;
+}
+
+.active {
+  display: none;
+}
+
+
+.todo-item {
+  display: flex;
+  justify-content: space-around;
+}
