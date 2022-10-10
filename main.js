@@ -1,5 +1,3 @@
-import { v4 as uuidv4 } from 'uuid';
-
 let todoList = [];
 
 const list = document.querySelector(".list");
@@ -32,7 +30,7 @@ renderList();
 
 form.addEventListener("submit", function (event) {
   event.preventDefault();
-  todoList.push({ id: uuidv4(), name: inp.value });
+  todoList.push({ name: inp.value });
   inp.value = "";
   localStorage.setItem("todoList", JSON.stringify(todoList));
   renderList();
